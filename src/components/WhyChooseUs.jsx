@@ -69,7 +69,7 @@ export default function WhyChooseUs() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold font-sans">{title}</h3>
-                <p className="mt-2 text-sm leading-6 text-white/80 max-w-prose">{description}</p>
+                <p className="mt-2 text-sm leading-6 text-[#F6E5CA] max-w-prose">{description}</p>
               </div>
             </div>
           ))}
