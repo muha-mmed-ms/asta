@@ -8,13 +8,8 @@
   --color-muted: #6b7280; /* placeholder */
   --color-background: #ffffff; /* placeholder */
 
-<<<<<<< HEAD
-  --font-sans: 'Marcellus', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-  --font-serif: 'Marcellus', serif;
-=======
   --font-sans: "Mulish", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   --font-heading: "Marcellus", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
->>>>>>> d3a41797931f98a2756afe22728949309f76d51c
 }
 
 html, body, #root {
