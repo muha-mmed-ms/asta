@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;600;700&display=swap');
 
 @theme {
   /* Update these with exact Figma tokens for pixel-perfect match */
@@ -17,4 +18,5 @@ html, body, #root {
 
 body {
   @apply bg-[--color-background] text-[--color-primary];
+  font-family: 'Marcellus', serif;
 }
