@@ -20,3 +20,12 @@ body {
   @apply bg-[--color-background] text-[--color-primary];
   font-family: 'Marcellus', serif;
 }
+
+/* Hide scrollbars (cross-browser) */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}

@@ -7,6 +7,8 @@ import About from './components/About'
 import Testimonials from './components/Testimonials'
 import Cta from './components/Cta'
 import PropertyShowcase from './components/PropertyShowcase'
+import LegacyOfTrust from './components/LegacyOfTrust'
+import Projects from './components/Projects'
 import RoomGallery from './components/RoomGallery'
 import Contact from './components/Contact'
 import GetInTouch from './components/GetInTouch'
@@ -19,17 +21,19 @@ function App() {
       <main>
         <Hero />
         <WhoWeAre />
+        <Projects />
         <WhyChooseUs />
-        <Features />
-        <About />
+        <LegacyOfTrust />
+        {/* <Features /> */}
+        {/* <About /> */}
         <Testimonials />
-        <Cta />
-        <PropertyShowcase />
-        <RoomGallery />
-        <Contact />
-        <GetInTouch />
+        {/* <Cta /> */}
+        {/* <PropertyShowcase /> */}
+        {/* <RoomGallery /> */}
+        {/* <Contact /> */}
+        {/* <GetInTouch /> */}
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }
