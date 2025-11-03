@@ -6,7 +6,9 @@ import WhyChooseUs from './components/WhyChooseUs'
 import About from './components/About'
 import Testimonials from './components/Testimonials'
 import Cta from './components/Cta'
+import DistinctionHero from './components/DistinctionHero'
 import PropertyShowcase from './components/PropertyShowcase'
+import Highlights from './components/Highlights'
 import RoomGallery from './components/RoomGallery'
 import Contact from './components/Contact'
 import GetInTouch from './components/GetInTouch'
@@ -25,11 +27,13 @@ function App() {
         <Testimonials />
         <Cta />
         <PropertyShowcase />
+        <Highlights />
+        <DistinctionHero />
         <RoomGallery />
         <Contact />
         <GetInTouch />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

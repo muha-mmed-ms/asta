@@ -8,18 +8,16 @@ export default function PropertyShowcase() {
           <div>
             {/* Logo */}
             <div className="mb-8 lg:mb-12">
-              <div className="inline-block">
-                <h1 className="text-2xl sm:text-3xl font-normal tracking-wider mb-1">
-                  THE
-                </h1>
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-normal tracking-wider border-l-4 border-white pl-3 mb-1">
-                  PRESIDENT
-                </h1>
-                <p className="text-sm tracking-[0.3em] text-white/80 ml-3">
-                  BY ASTA
-                </p>
-              </div>
-              <div className="w-32 h-px bg-white/40 mt-6"></div>
+              <img 
+                src="/images/president-logo.png" 
+                alt="The President by Asta"
+                className="h-24 sm:h-28 lg:h-32 w-auto"
+              />
+              <img 
+                src="/images/horizontal-line.png" 
+                alt=""
+                className="mt-6 h-auto w-32 sm:w-40"
+              />
             </div>
 
             {/* Heading */}
@@ -29,14 +27,14 @@ export default function PropertyShowcase() {
             </h2>
 
             {/* Description */}
-            <p className="text-white/70 text-base sm:text-lg leading-relaxed max-w-lg">
+            <p className="text-[20px] leading-[150%] tracking-[0.08em] max-w-lg font-normal" style={{ fontFamily: 'Mulish, sans-serif', color: '#F6E5CA' }}>
               Where legacy meets luxury. Rising proudly on the iconic RK Salai which was once home to the legendary Hotel President, this 22-storey landmark by Asta redefines Chennai's skyline.
             </p>
           </div>
 
           {/* Right Image */}
           <div className="relative">
-            <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-2xl">
+            <div className="w-full max-w-[755px] aspect-[755/422] rounded-lg overflow-hidden shadow-2xl">
               <img
                 src="/images/living-room-1.jpg"
                 alt="Luxury Living Room Interior"
@@ -50,7 +48,7 @@ export default function PropertyShowcase() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Image */}
           <div className="order-2 lg:order-1 relative">
-            <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-2xl">
+            <div className="w-full max-w-[755px] aspect-[755/422] rounded-lg overflow-hidden shadow-2xl">
               <img
                 src="/images/outside-img.jpg"
                 alt="Building Exterior"
@@ -61,17 +59,22 @@ export default function PropertyShowcase() {
 
           {/* Right Content */}
           <div className="order-1 lg:order-2">
+            {/* Heading */}
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal leading-tight mb-6">
               Discover spacious<br />
               3, 4 & 5 BHK residences
             </h2>
 
             {/* Description */}
-            <p className="text-white/70 text-base sm:text-lg leading-relaxed mb-6">
+            <p className="text-[20px] leading-[150%] tracking-[0.08em] max-w-lg font-normal mb-8" style={{ fontFamily: 'Mulish, sans-serif', color: '#F6E5CA' }}>
               and two exclusive Sky Villas, designed with precision and timeless sophistication, offering panoramic sea views and private pools.
             </p>
 
-            <div className="w-24 h-px bg-[#c9a961] mt-6"></div>
+            <img 
+              src="/images/horizontal-line.png" 
+              alt=""
+              className="h-auto w-32 sm:w-40"
+            />
           </div>
         </div>
       </div>
