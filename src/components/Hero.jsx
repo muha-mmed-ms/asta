@@ -1,22 +1,43 @@
+import { useState } from 'react'
+import { Menu, X } from 'lucide-react'
+
 export default function Hero() {
+  const [menuOpen, setMenuOpen] = useState(false)
   return (
-    <section className="relative overflow-hidden">
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(40rem_40rem_at_50%_-10%,rgba(124,58,237,0.15),transparent_60%)]"></div>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-16 pb-20">
-        <div className="max-w-3xl">
-          <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight">
-            Build your next experience with Asta
-          </h1>
-          <p className="mt-5 text-base sm:text-lg text-[--color-muted] max-w-2xl">
-            Production-ready UI, crafted to match your design system. Ship faster with confidence.
-          </p>
-          <div className="mt-8 flex items-center gap-3">
-            <button className="h-11 px-6 rounded-md bg-[--color-accent] text-white hover:opacity-90">Get Started</button>
-            <button className="h-11 px-6 rounded-md border border-black/10 hover:border-black/20">Live Demo</button>
-          </div>
+    <section className="relative min-h-[90vh]">
+      <img src="/images/hero.jpg" alt="Hero" className="absolute inset-0 w-full h-full object-cover" />
+      {/* Top overlay: logo on left, burger on right */}
+      <div className="absolute inset-x-0 top-0 z-10">
+        <div className="mx-32 ml-40 px-2 py-3 flex items-center justify-between text-white">
+          <a href="#" className="flex items-center gap-3 select-none">
+            <img src="src/assets/logo.svg" alt="ASTA" className="h-16 w-auto hidden sm:block" />
+          </a>
+          <button
+            type="button"
+            aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen(v => !v)}
+            className="p-2 rounded-md active:scale-95 transition focus:outline-none"
+          >
+            {menuOpen ? <X className="h-6 w-6 text-primary" /> : <Menu className="h-6 w-6 text-primary border-none" />}
+          </button>
         </div>
+
+        {menuOpen && (
+          <>
+            {/* click-away area */}
+            <button aria-label="Close" onClick={() => setMenuOpen(false)} className="absolute inset-0 -z-10" />
+            <nav className="absolute right-6 top-[72px] bg-white/95 text-gray-900 rounded-md shadow-xl w-56 overflow-hidden">
+              <a href="#features" className="block px-4 py-3 hover:bg-gray-100">Features</a>
+              <a href="#about" className="block px-4 py-3 hover:bg-gray-100">About</a>
+              <a href="#testimonials" className="block px-4 py-3 hover:bg-gray-100">Testimonials</a>
+              <a href="#contact" className="block px-4 py-3 hover:bg-gray-100">Contact</a>
+            </nav>
+          </>
+        )}
       </div>
     </section>
+
   );
 }
 
