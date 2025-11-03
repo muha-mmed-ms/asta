@@ -13,6 +13,8 @@ import RoomGallery from './components/RoomGallery'
 import Contact from './components/Contact'
 import GetInTouch from './components/GetInTouch'
 import Footer from './components/Footer'
+import Projects from './components/Projects'
+import LegacyOfTrust from './components/LegacyOfTrust'
 
 function App() {
   return (
@@ -21,9 +23,11 @@ function App() {
       <main>
         <Hero />
         <WhoWeAre />
+        <Projects />
         <WhyChooseUs />
-        <Features />
-        <About />
+        <LegacyOfTrust />
+        {/* <Features /> */}
+        {/* <About /> */}
         <Testimonials />
         <Cta />
         <PropertyShowcase />
