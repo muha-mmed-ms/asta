@@ -6,8 +6,8 @@ export default function Hero() {
   return (
     <section className="relative min-h-[90vh]">
       <img src="/images/hero.jpg" alt="Hero" className="absolute inset-0 w-full h-full object-cover" />
-      {/* Top overlay: logo on left, burger on right */}
-      <div className="absolute inset-x-0 top-0 z-10">
+
+      {/* <div className="absolute inset-x-0 top-0 z-10">
         <div className="mx-32 ml-40 px-2 py-3 flex items-center justify-between text-white">
           <a href="#" className="flex items-center gap-3 select-none">
             <img src="src/assets/logo.svg" alt="ASTA" className="h-16 w-auto hidden sm:block" />
@@ -25,7 +25,7 @@ export default function Hero() {
 
         {menuOpen && (
           <>
-            {/* click-away area */}
+      
             <button aria-label="Close" onClick={() => setMenuOpen(false)} className="absolute inset-0 -z-10" />
             <nav className="absolute right-6 top-[72px] bg-white/95 text-gray-900 rounded-md shadow-xl w-56 overflow-hidden">
               <a href="#features" className="block px-4 py-3 hover:bg-gray-100">Features</a>
@@ -35,7 +35,7 @@ export default function Hero() {
             </nav>
           </>
         )}
-      </div>
+      </div> */}
     </section>
 
   );

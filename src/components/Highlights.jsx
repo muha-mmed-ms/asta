@@ -42,16 +42,39 @@ export default function Highlights() {
             {/* Stats Grid */}
             <div className="grid grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8 max-w-sm w-full">
               <div className="border border-white/30 p-4 sm:p-6 lg:p-8 text-center">
-                <div className="text-4xl sm:text-5xl lg:text-7xl font-light mb-2 sm:mb-3">77</div>
-                <div className="text-xs sm:text-sm text-white/90 leading-snug">luxury<br />residences</div>
+                <div 
+                  className="text-[60px] font-normal leading-[100%] tracking-[0.05em] uppercase mb-2 sm:mb-3 text-[#D9D9D9]"
+                  style={{ fontFamily: 'Marcellus, serif' }}
+                >
+                  77
+                </div>
+                <div 
+                  className="text-[20px] font-normal leading-[100%] tracking-[0.08em] text-center"
+                  style={{ fontFamily: 'Mulish, sans-serif', color: '#F6E5CA' }}
+                >
+                  luxury<br />residences
+                </div>
               </div>
               <div className="border border-white/30 p-4 sm:p-6 lg:p-8 text-center">
-                <div className="text-4xl sm:text-5xl lg:text-7xl font-light mb-2 sm:mb-3">2</div>
-                <div className="text-xs sm:text-sm text-white/90 leading-snug">Sky<br />Villas</div>
+                <div 
+                  className="text-[60px]  leading-[100%] tracking-[0.05em] uppercase mb-2 sm:mb-3 text-[#D9D9D9]"
+                  style={{ fontFamily: 'Marcellus, serif' }}
+                >
+                  2
+                </div>
+                <div 
+                  className="text-[20px]  leading-[100%] tracking-[0.08em] text-center"
+                  style={{ fontFamily: 'Mulish, sans-serif', color: '#F6E5CA' }}
+                >
+                  Sky<br />Villas
+                </div>
               </div>
             </div>
 
-            <p className="text-[13px] sm:text-[15px] text-white/80 leading-relaxed">
+            <p 
+              className="text-[20px] leading-[150%] tracking-[0.08em]"
+              style={{ fontFamily: 'Mulish, sans-serif', fontWeight: 400, color: '#F6E5CA' }}
+            >
               ranging from 3,922 - 6,160 sq.ft.,<br />
               with the Sky Villas extending up<br />
               to 15,223 sq.ft.
@@ -81,40 +104,48 @@ export default function Highlights() {
 
             {/* Highlights List */}
             <div className="space-y-4 sm:space-y-6 text-[16px] sm:text-[18px] lg:text-[20px] leading-[120%] sm:leading-[110%] lg:leading-[100%] tracking-[0.05em] sm:tracking-[0.06em] lg:tracking-[0.08em] w-full break-words" style={{ fontFamily: 'Mulish, sans-serif', color: '#F6E5CA' }}>
-              <div>
+              <div className="flex items-start gap-3">
+                <span className="text-[#B1A490] mt-1">•</span>
                 <p>
                   <span className="font-bold">Iconic 22-storey tower</span> <span className="font-light">on RK Salai, a new chapter in Chennai's architectural legacy.</span>
                 </p>
               </div>
 
-              <div>
+              <div className="flex items-start gap-3">
+                <span className="text-[#B1A490] mt-1">•</span>
                 <p>
                   <span className="font-bold">Only 4 bespoke residences per floor</span> <span className="font-light">for absolute privacy.</span>
                 </p>
               </div>
 
-              <div>
+              <div className="flex items-start gap-3">
+                <span className="text-[#B1A490] mt-1">•</span>
                 <p>
                   <span className="font-bold">Sea-facing homes</span> <span className="font-light">with sweeping panoramic views.</span>
                 </p>
               </div>
 
-              <div>
+              <div className="flex items-start gap-3">
+                <span className="text-[#B1A490] mt-1">•</span>
                 <p>
                   <span className="font-bold">Private pools</span> <span className="font-light">and terraces in Sky Villas</span>
                 </p>
               </div>
 
-              <div>
+              <div className="flex items-start gap-3">
+                <span className="text-[#B1A490] mt-1">•</span>
                 <p>
                   <span className="font-bold">Double-height living spaces</span> <span className="font-light">designed for light, openness, and grandeur.</span>
                 </p>
               </div>
 
 
-              <p className="mb-2">
-                <span className="font-bold">Exclusive amenities</span> <span className="font-light"> across the Ground Floor and Sky Lounge, Including: Rooftop pool.</span>
-              </p>
+              <div className="flex items-start gap-3">
+                <span className="text-[#B1A490] mt-1">•</span>
+                <p className="mb-2">
+                  <span className="font-bold">Exclusive amenities</span> <span className="font-light"> across the Ground Floor and Sky Lounge, Including: Rooftop pool.</span>
+                </p>
+              </div>
               <div className="mt-4 sm:mt-6 lg:mt-8">
                 <ul className="list-disc list-inside space-y-1.5 sm:space-y-2 ml-3 sm:ml-4 font-light">
                   <li>Sky lounge</li>
@@ -130,7 +161,8 @@ export default function Highlights() {
                 </ul>
               </div>
 
-              <div className="mt-4 sm:mt-6 lg:mt-8">
+              <div className="mt-4 sm:mt-6 lg:mt-8 flex items-start gap-3">
+                <span className="text-[#B1A490] mt-1">•</span>
                 <p>
                   <span className="font-bold">Premium hardware</span> <span className="font-light">and curated interior finishes.</span>
                 </p>
@@ -149,8 +181,11 @@ export default function Highlights() {
             </div>
 
             {/* Schedule Tour Box */}
-            <div className="bg-[#1a2947] p-6 sm:p-8 lg:p-12 rounded-none flex flex-col items-start w-full">
-              <h4 className="text-[24px] sm:text-[28px] lg:text-[36px] font-normal leading-tight mb-4 sm:mb-6 text-white w-full">
+            <div className="bg-[#1a2947]  rounded-none flex flex-col items-start w-full">
+              <h4 
+                className="text-[40px] font-normal leading-[56px] tracking-normal mb-4 sm:mb-6 text-white w-full"
+                style={{ fontFamily: 'Marcellus, serif' }}
+              >
                 Schedule a Private Tour
               </h4>
               <p className="text-[16px] sm:text-[18px] lg:text-[20px] leading-[140%] tracking-[0.05em] sm:tracking-[0.06em] lg:tracking-[0.08em] mb-6 sm:mb-8 font-normal w-full" style={{ fontFamily: 'Futura Std, sans-serif', color: '#F6E5CA' }}>

@@ -22,24 +22,24 @@ import ProjectSectionWrap from './components/ProjectSectionWrap'
 function App() {
   return (
     <div className="min-h-full bg-primary text-white">
-      {/* <Header /> */}
+      <Header />
       <main>
         <Hero />
         {/* <WhoWeAre /> */}
-        <About />
+        {/* <About />
         <Projects />
         <WhyChooseUs />
         <Features />
         <Testimonials />
-        <LegacyOfTrust />
+        <LegacyOfTrust /> */}
         {/* <Cta /> */}
-        <PropertyShowcase />
+        {/* <PropertyShowcase />
         <Highlights />
         <DistinctionHero />
         <RoomGallery />
         <Contact />
-        <GetInTouch />
-        <ProjectSectionWrap />
+        <GetInTouch /> */}
+        {/* <ProjectSectionWrap /> */}
         <ContactSectionWrap />
       </main>
       <Footer />
