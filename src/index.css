@@ -29,3 +29,40 @@ body {
 .no-scrollbar::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
+
+/* Responsive semi-circle behind the image in About section */
+.about-semicircle {
+  bottom: 0%;
+  left: 0; /* default for SM/MD */
+  width: 107%;
+  height: 100%;
+  background-color: #B2862D;
+  clip-path: ellipse(75% 65% at 18% 92%);
+  -webkit-clip-path: ellipse(75% 65% at 18% 92%);
+}
+
+/* LG and above */
+@media (min-width: 1024px) {
+  .about-semicircle {
+    bottom: 0%;
+    left: 170px;
+    width: 92%;
+    height: 87%;
+    clip-path: ellipse(73% 74% at 17% 99%);
+    -webkit-clip-path: ellipse(72% 74% at 17% 99%);
+    background-color: #B2862D;
+  }
+}
+
+/* LG and above */
+@media (min-width: 1112px) {
+  .about-semicircle {
+    bottom: 0%;
+    left: -40px;
+    width: 114%;
+    height: 87%;
+    clip-path: ellipse(73% 74% at 17% 99%);
+    -webkit-clip-path: ellipse(73% 74% at 17% 99%);
+    background-color: #B2862D;
+  }
+}

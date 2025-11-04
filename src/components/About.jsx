@@ -7,29 +7,19 @@ const About = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
   return (
-    <section id="who-we-are" ref={ref} className="py-20 md:py-32 relative" style={{ backgroundColor: '#0F2847', overflow: 'visible' }}>
-      <div className="container mx-auto px-4 md:px-8 lg:px-12">
+    <section id="who-we-are" ref={ref} className="py-20 md:py-32 relative overflow-x-hidden" style={{ backgroundColor: '#0F2847' }}>
+      <div className="">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Side - Image with Golden Curve */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
-            className="relative h-96 lg:h-[600px]"
-            style={{ overflow: 'visible' }}
+            className="relative h-96 lg:h-[600px] overflow-hidden lg:overflow-visible"
           >
             {/* Mustard semi-circle behind image bottom-left */}
             <div
-              className="absolute z-0"
-              style={{
-                bottom: '0%',
-                left: '0',
-                width: '107%',
-                height: '100%',
-                backgroundColor: '#D4AF37',
-                clipPath: 'ellipse(75% 65% at 18% 92%)',
-                WebkitClipPath: 'ellipse(75% 65% at 18% 92%)',
-              }}
+              className="absolute z-0 about-semicircle"
             />
             {/* Building Image - Positioned on top of golden curve */}
             <div className="relative z-10 h-full w-full flex items-center justify-start">
@@ -61,17 +51,17 @@ const About = () => {
             <div
               className="absolute -top-4 -left-4 w-32 h-32 bg-accent-beige rounded-full opacity-20 blur-2xl z-0"
             />
-            <div className="relative z-10">
+            <div className="relative z-10 pl-0 lg:pl-12 xl:pl-0">
               {/* Eyebrow */}
-              <p className="text-accent-beige text-sm font-medium uppercase tracking-wider mb-4 font-sans">
+              <p className="text-[#B1A490] text-sm font-semibold uppercase tracking-wider mb-4 font-sans">
                 WHO WE ARE
               </p>
               {/* H1 Heading */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight font-heading">
+              <h1 className="text-[30px] lg:text-[40px] font-normal text-white mb-6 leading-tight font-heading">
                 Homes, commercial spaces and hospitality
               </h1>
               {/* Body text - single paragraph with bold on brand name */}
-              <p className="text-cream-light text-lg mb-8 leading-relaxed font-sans">
+              <p className="text-[#F6E5CA] text-base md:text-lg mb-8 leading-relaxed font-sans">
                 <strong className="font-bold">Asta Properties</strong> is a Chennai-based real estate and hospitality company, founded by Vikram Agarwal, backed by over four decades of trust and nearly 30 years of experience in property development. We build structurally strong, functionally efficient residential, commercial, and hospitality projects that are consistently delivered on time. As pioneers of Chennai&apos;s real estate growth, our portfolio includes landmark residences, commercial spaces, and hospitality ventures such as Park Plaza and Radisson Blu in Egmore, developed and owned by the group under global hotel brands.
               </p>
               {/* CTA - Ghost button */}
