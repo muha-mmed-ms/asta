@@ -25,17 +25,17 @@ function App() {
         <WhoWeAre />
         <Projects />
         <WhyChooseUs />
-        <LegacyOfTrust /> */}
         {/* <Features /> */}
         {/* <About /> */}
-        {/* <Testimonials />
-        <Cta />
-        <PropertyShowcase />
+        <Testimonials />
+        <LegacyOfTrust />
+        {/* <Cta /> */}
+        {/* <PropertyShowcase />
         <Highlights />
         <DistinctionHero />
         <RoomGallery /> */}
         <Contact />
-        <GetInTouch />
+        <GetInTouch /> 
       </main>
       <Footer />
     </div>
