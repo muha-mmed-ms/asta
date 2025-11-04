@@ -24,18 +24,23 @@ function App() {
     <div className="min-h-full bg-primary text-white">
       {/* <Header /> */}
       <main>
-        {/* <Hero />
-        <WhoWeAre />
+        <Hero />
+        {/* <WhoWeAre /> */}
+        <About />
         <Projects />
         <WhyChooseUs />
-        {/* <Features /> */}
-        {/* <About /> */}
-        {/* <Testimonials /> */}
-        {/* <LegacyOfTrust /> */}
+        <Features />
+        <Testimonials />
+        <LegacyOfTrust />
         {/* <Cta /> */}
-        
+        <PropertyShowcase />
+        <Highlights />
+        <DistinctionHero />
+        <RoomGallery />
+        <Contact />
+        <GetInTouch />
         <ProjectSectionWrap />
-        {/* <ContactSectionWrap /> */}
+        <ContactSectionWrap />
       </main>
       <Footer />
     </div>
