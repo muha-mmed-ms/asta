@@ -143,10 +143,10 @@ export default function Projects() {
   return (
     <section className="bg-[#122549] text-white py-16 lg:py-24 w-full">
       <div className=" mx-auto px-6 sm:px-8 lg:px-28 grid lg:grid-cols-[360px_1fr] gap-10 lg:gap-16 items-start">
-        <div className="sticky top-6">
+        <div className="">
           <div className="flex items-center gap-3 text-white/70 mb-6">
             <span className="inline-block w-8 h-8 rounded-full border border-white/30" />
-            <span className="tracking-[0.25em] text-xs">WHAT WE BUILD</span>
+            <span className="tracking-[0.25em] text-sm">WHAT WE BUILD</span>
           </div>
           <h2 className="font-normal text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">Explore our
             <br />projects</h2>

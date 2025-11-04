@@ -22,20 +22,20 @@ function App() {
       {/* <Header /> */}
       <main>
         <Hero />
-        <WhoWeAre />
+        {/* <WhoWeAre /> */}
+        <About />
         <Projects />
         <WhyChooseUs />
-        {/* <Features /> */}
-        {/* <About /> */}
+        <Features />
         <Testimonials />
         <LegacyOfTrust />
         {/* <Cta /> */}
-        {/* <PropertyShowcase />
+        <PropertyShowcase />
         <Highlights />
         <DistinctionHero />
         <RoomGallery />
         <Contact />
-        <GetInTouch /> */}
+        <GetInTouch />
       </main>
       <Footer />
     </div>
