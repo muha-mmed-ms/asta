@@ -4,7 +4,7 @@ import iconQuality from '../assets/icons/quality.png'
 import iconTime from '../assets/icons/time.png'
 import iconPremiumLocation from '../assets/icons/premium-location.png'
 import iconResidentialCommercial from '../assets/icons/residential-commercial.png'
-import iconDialogue from '../assets/icons/dialouge1.png'
+import iconDialogue from '../assets/dialouge.svg'
 
 export default function WhyChooseUs() {
   const features = [
@@ -51,7 +51,7 @@ export default function WhyChooseUs() {
       <div className="mx-auto px-8 sm:px-12 lg:px-28 pt-16 lg:pt-24 pb-20 lg:pb-28">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between mb-10">
           <div className="relative">
-            <img src={iconDialogue} alt="" aria-hidden="true" className="absolute -left-6 -top-6 w-20 h-20 opacity-20 bg-[#B1A49033] select-none pointer-events-none" />
+            <img src={iconDialogue} alt="" aria-hidden="true" className="absolute -left-6 md:-top-12 -top-7 md:size-24 size-16 select-none pointer-events-none" />
             <p className="uppercase font-sans tracking-[0.25em] text-sm text-[#B1A490]">Why choose us</p>
             <h2 className="mt-3 font-heading font-normal text-[30px] lg:text-[40px] leading-tight">
               Making living spaces

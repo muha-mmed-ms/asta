@@ -26,7 +26,6 @@ function App() {
         <About />
         <Projects />
         <WhyChooseUs />
-        <Features />
         <Testimonials />
         <LegacyOfTrust />
         {/* <Cta /> */}
