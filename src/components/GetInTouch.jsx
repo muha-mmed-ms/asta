@@ -31,7 +31,7 @@ export default function GetInTouch() {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Header */}
         <div className="mb-16 lg:mb-20">
-          <p className="text-[11px] sm:text-[12px] tracking-[0.25em] uppercase text-white/50 mb-4 font-light" style={{ fontFamily: 'Mulish, sans-serif' }}>
+          <p className="text-[11px] sm:text-[12px] tracking-[0.25em] uppercase text-[#B1A490]/50 mb-4 font-light" style={{ fontFamily: 'Mulish, sans-serif' }}>
             GET IN TOUCH
           </p>
           <h2 className="text-[40px] sm:text-[45px] lg:text-[50px] font-normal leading-tight">
@@ -49,14 +49,14 @@ export default function GetInTouch() {
               </h3>
 
               {/* Address */}
-              <p className="text-white/60 text-[14px] sm:text-[15px] leading-[1.7] whitespace-pre-line mb-4">
+              <p className="text-[#B1A490] text-[14px] sm:text-[15px] leading-[1.7] whitespace-pre-line mb-4">
                 {location.address}
               </p>
 
               {/* Email */}
               <a
                 href={`mailto:${location.email}`}
-                className="block text-[#6b9acc] hover:text-[#8fb3d9] transition-colors text-[14px] sm:text-[15px] underline decoration-1 underline-offset-2"
+                className="text-[#B1A490]  transition-colors text-[14px] sm:text-[15px] underline decoration-1 underline-offset-2"
               >
                 {location.email}
               </a>
@@ -64,7 +64,7 @@ export default function GetInTouch() {
               {/* Phone */}
               <a
                 href={`tel:${location.phone.replace(/\s/g, '')}`}
-                className="block text-white/60 hover:text-white transition-colors text-[14px] sm:text-[15px]"
+                className="block text-[#B1A490] transition-colors text-[14px] sm:text-[15px] mb-4"
               >
                 {location.phone}
               </a>

@@ -108,7 +108,8 @@ export default function Contact() {
                 <div>
                   <button
                     type="submit"
-                    className="px-8 py-3 bg-[#c9a961] text-white font-medium rounded-md hover:bg-[#b89851] transition-colors duration-300 border border-[#B1A490]/36"
+                    className="px-8 py-5 bg-[#B1A490] text-white border border-[#B1A490]/36 text-[14px] font-semibold leading-[100%] tracking-[0.08em] uppercase"
+                    style={{ fontFamily: 'Mulish, sans-serif' }}
                   >
                     SUBMIT
                   </button>

@@ -21,19 +21,19 @@ function App() {
     <div className="min-h-full bg-primary text-white">
       {/* <Header /> */}
       <main>
-        <Hero />
+        {/* <Hero />
         <WhoWeAre />
         <Projects />
         <WhyChooseUs />
-        <LegacyOfTrust />
+        <LegacyOfTrust /> */}
         {/* <Features /> */}
         {/* <About /> */}
-        <Testimonials />
+        {/* <Testimonials />
         <Cta />
         <PropertyShowcase />
         <Highlights />
         <DistinctionHero />
-        <RoomGallery />
+        <RoomGallery /> */}
         <Contact />
         <GetInTouch />
       </main>
