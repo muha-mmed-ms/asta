@@ -31,7 +31,7 @@ export default function GetInTouch() {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Header */}
         <div className="mb-16 lg:mb-20">
-          <p className="text-[11px] sm:text-[12px] tracking-[0.25em] uppercase text-[#B1A490]/50 mb-4 font-light" style={{ fontFamily: 'Mulish, sans-serif' }}>
+          <p className="text-[11px] sm:text-[12px] tracking-[0.25em] uppercase text-[#B1A490] mb-4 font-light" style={{ fontFamily: 'Mulish, sans-serif' }}>
             GET IN TOUCH
           </p>
           <h2 className="text-[40px] sm:text-[45px] lg:text-[50px] font-normal leading-tight">
@@ -42,21 +42,28 @@ export default function GetInTouch() {
         {/* Locations Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
           {locations.map((location, index) => (
-            <div key={index} className="space-y-3">
+            <div key={index} className="">
               {/* Location Name */}
-              <h3 className="text-[18px] sm:text-[20px] font-normal mb-5 text-white">
+              <h3 className="text-[14px] sm:text-[20px] font-normal mb-5 text-white">
                 {location.name}
               </h3>
 
               {/* Address */}
-              <p className="text-[#B1A490] text-[14px] sm:text-[15px] leading-[1.7] whitespace-pre-line mb-4">
+              <p 
+                className="text-[#B1A490] text-[14px] font-normal leading-[30px] tracking-normal whitespace-pre-line"
+                style={{ fontFamily: 'Mulish, sans-serif' }}
+              >
                 {location.address}
               </p>
 
               {/* Email */}
               <a
                 href={`mailto:${location.email}`}
-                className="text-[#B1A490]  transition-colors text-[14px] sm:text-[15px] underline decoration-1 underline-offset-2"
+                className="text-[#B1A490] transition-colors text-[14px] font-normal leading-[30px] tracking-normal underline"
+                style={{ 
+                  fontFamily: 'Mulish, sans-serif',
+                  textDecorationStyle: 'solid'
+                }}
               >
                 {location.email}
               </a>
@@ -64,7 +71,8 @@ export default function GetInTouch() {
               {/* Phone */}
               <a
                 href={`tel:${location.phone.replace(/\s/g, '')}`}
-                className="block text-[#B1A490] transition-colors text-[14px] sm:text-[15px] mb-4"
+                className="block text-[#B1A490] transition-colors text-[14px] font-normal leading-[30px] tracking-normal mb-4"
+                style={{ fontFamily: 'Mulish, sans-serif' }}
               >
                 {location.phone}
               </a>

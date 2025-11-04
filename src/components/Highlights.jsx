@@ -16,15 +16,26 @@ export default function Highlights() {
           </div>
 
           {/* Right Content */}
-          <div className="order-1 lg:order-2 w-full overflow-hidden">
-            <div className="w-12 sm:w-16 h-px bg-[#c9a961] mb-6 sm:mb-8"></div>
+          <div className="order-1 lg:order-2 w-full overflow-hidden ">
+            <img
+              src="/images/horizontal-line.png"
+              alt=""
+              className="h-auto w-32 sm:w-40 mb-6 sm:mb-8"
+              //  className="w-12 sm:w-16 mb-6 h-auto sm:mb-8"
+            />
 
-            <h2 className="text-2xl sm:text-3xl lg:text-[48px] font-normal leading-tight mb-4 sm:mb-6 w-full break-words">
+            <h2 
+              className="text-[40px] font-normal leading-[56px] tracking-normal mb-4  w-full break-words"
+              style={{ fontFamily: 'Marcellus, serif' }}
+            >
               Discover Elevated Living at<br />
               The President
             </h2>
 
-            <p className="text-[10px] sm:text-[11px] tracking-[0.15em] sm:tracking-[0.25em] uppercase mb-6 sm:mb-10 w-full" style={{ color: '#c9a961' }}>
+            <p 
+              className="text-[16px] font-normal leading-[30px] tracking-normal uppercase mb-6  w-full" 
+              style={{ fontFamily: 'Mulish, sans-serif', color: '#c9a961' }}
+            >
               Limited Collection
             </p>
 

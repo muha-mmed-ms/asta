@@ -12,9 +12,12 @@ import Highlights from './components/Highlights'
 import RoomGallery from './components/RoomGallery'
 import Contact from './components/Contact'
 import GetInTouch from './components/GetInTouch'
+import LocationMap from './components/LocationMap'
 import Footer from './components/Footer'
 import Projects from './components/Projects'
 import LegacyOfTrust from './components/LegacyOfTrust'
+import ContactSectionWrap from './components/ContactSectionWrap'
+import ProjectSectionWrap from './components/ProjectSectionWrap'
 
 function App() {
   return (
@@ -27,15 +30,12 @@ function App() {
         <WhyChooseUs />
         {/* <Features /> */}
         {/* <About /> */}
-        <Testimonials />
-        <LegacyOfTrust />
+        {/* <Testimonials /> */}
+        {/* <LegacyOfTrust /> */}
         {/* <Cta /> */}
-        {/* <PropertyShowcase />
-        <Highlights />
-        <DistinctionHero />
-        <RoomGallery /> */}
-        <Contact />
-        <GetInTouch /> 
+        
+        <ProjectSectionWrap />
+        {/* <ContactSectionWrap /> */}
       </main>
       <Footer />
     </div>

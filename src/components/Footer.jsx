@@ -2,7 +2,7 @@ import Logo from '../assets/logo2.svg'
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-white w-full">
+    <footer className="bg-[#122549] text-white w-full">
       <div className=" mx-auto px-6 sm:px-8 lg:px-28 py-12 lg:py-16">
         {/* Top row */}
         <div className="flex flex-col sm:grid grid-cols-2 gap-8 lg:gap-12 mb-12">

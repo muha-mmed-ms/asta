@@ -1,6 +1,13 @@
-# Room Gallery Images
+# Images Directory
 
-Please add your room images to this folder. The component supports **multiple images per room category**.
+Please add your images to this folder.
+
+## Map Image
+- `map.jpg` - Your Chennai locations map screenshot (used in LocationMap component)
+
+## Room Gallery Images
+
+The Room Gallery component supports **multiple images per room category**.
 
 ## Image Naming Structure
 

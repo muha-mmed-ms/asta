@@ -34,7 +34,7 @@ export default function PropertyShowcase() {
 
           {/* Right Image */}
           <div className="relative">
-            <div className="w-full max-w-[755px] aspect-[755/422] rounded-lg overflow-hidden shadow-2xl">
+            <div className="w-full max-w-[755px] aspect-[755/422] overflow-hidden shadow-2xl">
               <img
                 src="/images/living-room-1.jpg"
                 alt="Luxury Living Room Interior"
@@ -48,7 +48,7 @@ export default function PropertyShowcase() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Image */}
           <div className="order-2 lg:order-1 relative">
-            <div className="w-full max-w-[755px] aspect-[755/422] rounded-lg overflow-hidden shadow-2xl">
+            <div className="w-full max-w-[755px] aspect-[755/422]  overflow-hidden shadow-2xl">
               <img
                 src="/images/outside-img.jpg"
                 alt="Building Exterior"
