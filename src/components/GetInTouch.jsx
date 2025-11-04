@@ -27,7 +27,7 @@ export default function GetInTouch() {
   ];
 
   return (
-    <section className="bg-[#1a2947] text-white py-16 lg:py-20 w-full">
+    <section className="bg-[#0f2447] text-white py-16 lg:py-20 w-full">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Header */}
         <div className="mb-16 lg:mb-20">

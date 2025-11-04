@@ -23,7 +23,7 @@ export default function LegacyOfTrust({ imageSrc }) {
             Over the decades, Asta has built more than structures, we've built relationships founded on trust and delivery. Every project stands as a reflection of that promise, made to last and designed to uplift the lives within.
           </p>
           <a
-            href="#projects"
+            href="/projects"
             className="mt-8 inline-flex items-center justify-center px-6 py-3 border border-white/30 rounded-md text-sm hover:bg-white hover:text-[#122549] transition"
           >
             EXPLORE PROJECTS

@@ -1,3 +1,4 @@
+import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import WhoWeAre from './components/WhoWeAre'
@@ -23,24 +24,37 @@ function App() {
   return (
     <div className="min-h-full bg-primary text-white">
       <Header />
-      <main>
-        <Hero />
-        {/* <WhoWeAre /> */}
-        {/* <About />
-        <Projects />
-        <WhyChooseUs />
-        <Testimonials />
-        <LegacyOfTrust /> */}
-        {/* <Cta /> */}
-        {/* <PropertyShowcase />
-        <Highlights />
-        <DistinctionHero />
-        <RoomGallery />
-        <Contact />
-        <GetInTouch /> */}
-        {/* <ProjectSectionWrap /> */}
-        <ContactSectionWrap />
-      </main>
+      <Routes>
+        <Route path="/" element={
+          <main>
+            <Hero />
+            <WhoWeAre />
+            {/* <About /> */}
+            <Projects />
+            <WhyChooseUs />
+            <Testimonials />
+            <LegacyOfTrust />
+            {/* <Cta /> */}
+            {/* <PropertyShowcase />
+            <Highlights />
+            <DistinctionHero />
+            <RoomGallery />
+            <Contact />
+            <GetInTouch /> */}
+            {/* <ContactSectionWrap /> */}
+          </main>
+        } />
+          <Route path="/projects" element={
+            <main>
+              <ProjectSectionWrap />
+            </main>
+          } />
+          <Route path="/contact" element={
+            <main>
+              <ContactSectionWrap />
+            </main>
+          } />
+      </Routes>
       <Footer />
     </div>
   )

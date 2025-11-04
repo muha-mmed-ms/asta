@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-
+import { Link } from 'react-router-dom';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,10 +24,10 @@ const Header = () => {
     };
   }, [isMenuOpen]);
   const navLinks = [
-    { path: '#home', label: 'Home' },
-    { path: '#about', label: 'About' },
-    { path: '#projects', label: 'Projects' },
-    { path: '#contact', label: 'Contact' },
+    { path: '#home', label: 'Home', isHash: true },
+    { path: '#about', label: 'About', isHash: true },
+    { path: '/projects', label: 'Projects', isHash: false },
+    { path: '/contact', label: 'Contact', isHash: true },
   ];
   return (
     <>
@@ -38,9 +38,9 @@ const Header = () => {
     >
       <nav className="container mx-auto px-6 sm:px-8 md:px-12 lg:px-16">
         <div className="flex items-center justify-between h-16 sm:h-20">
-          <a href="#home" className="z-50">
+          <a href="/" className="z-50">
             <img
-              src="/images/logo-white.png"
+              src="/images/logo.svg"
               alt="ASTA Properties"
               className="w-auto h-8 sm:h-10 md:h-12 lg:h-14"
               onError={() => setLogoError(true)}
@@ -83,7 +83,7 @@ const Header = () => {
           <div className="absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-6 sm:px-8 md:px-12 lg:pl-24 xl:pl-40 lg:pr-12 h-16 sm:h-20">
             <a href="#home" onClick={() => setIsMenuOpen(false)}>
               <img
-                src="/images/logo-white.png"
+                src="/images/logo2.svg"
                 alt="ASTA Properties"
                 className="w-auto h-8 sm:h-10 md:h-12 lg:h-14"
                 onError={() => setLogoError(true)}
@@ -114,26 +114,42 @@ const Header = () => {
           <div className="absolute left-0 top-0 h-full w-full flex items-center">
             <div className="pl-10 sm:pl-12 md:pl-16 lg:pl-24 xl:pl-50 pr-6 sm:pr-8">
               <nav className="flex flex-col">
-                {navLinks.map((link, index) => (
-              <a
-                key={link.path}
-                href={link.path}
-                onClick={() => setIsMenuOpen(false)}
-                    className="text-white hover:text-accent-beige transition-colors duration-300 font-heading font-normal leading-none tracking-normal text-[32px] sm:text-[36px] md:text-[40px]"
-                    style={{
-                      fontWeight: 400,
-                      lineHeight: '100%',
-                      letterSpacing: '0%',
-                      marginBottom: index < navLinks.length - 1 ? '1.5rem' : '0',
-                      animationDelay: `${index * 0.1}s`,
-                      opacity: isMenuOpen ? 1 : 0,
-                      transform: isMenuOpen ? 'translateX(0)' : 'translateX(-20px)',
-                      transition: `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`,
-                    }}
-              >
-                {link.label}
-              </a>
-            ))}
+                {navLinks.map((link, index) => {
+                  const linkStyle = {
+                    fontWeight: 400,
+                    lineHeight: '100%',
+                    letterSpacing: '0%',
+                    marginBottom: index < navLinks.length - 1 ? '1.5rem' : '0',
+                    animationDelay: `${index * 0.1}s`,
+                    opacity: isMenuOpen ? 1 : 0,
+                    transform: isMenuOpen ? 'translateX(0)' : 'translateX(-20px)',
+                    transition: `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`,
+                  };
+                  
+                  const linkClassName = "text-white hover:text-accent-beige transition-colors duration-300 font-heading font-normal leading-none tracking-normal text-[32px] sm:text-[36px] md:text-[40px]";
+                  
+                  return link.isHash ? (
+                    <a
+                      key={link.path}
+                      href={link.path}
+                      onClick={() => setIsMenuOpen(false)}
+                      className={linkClassName}
+                      style={linkStyle}
+                    >
+                      {link.label}
+                    </a>
+                  ) : (
+                    <Link
+                      key={link.path}
+                      to={link.path}
+                      onClick={() => setIsMenuOpen(false)}
+                      className={linkClassName}
+                      style={linkStyle}
+                    >
+                      {link.label}
+                    </Link>
+                  );
+                })}
               </nav>
             </div>
           </div>

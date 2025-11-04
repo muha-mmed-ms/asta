@@ -142,7 +142,7 @@ export default function Projects() {
   ]
 
   return (
-    <section className="bg-[#122549] text-white py-16 lg:py-24 w-full">
+    <section className="bg-[#0f2447] text-white py-16 lg:py-24 w-full">
       <div className=" mx-auto px-6 sm:px-8 lg:px-28 grid lg:grid-cols-[360px_1fr] gap-10 lg:gap-16 items-start">
         <div className="">
           <div className="relative text-white/70 mb-4 sm:mb-6">
@@ -152,7 +152,7 @@ export default function Projects() {
           <div className="flex flex-row md:flex-col items-center md:items-start justify-between gap-4 mb-6">
             <h2 className="font-normal font-heading text-2xl md:text-4xl lg:text-5xl leading-tight">Explore our
               <br className="hidden md:block" /> projects</h2>
-            <a href="#projects" className="inline-flex items-center justify-center px-5 py-3 border border-white/30 rounded-xs text-sm text-[#B1A490] hover:bg-white hover:text-[#122549] transition md:self-start md:mt-4">VIEW ALL PROJECTS</a>
+            <a href="/projects" className="inline-flex items-center justify-center px-5 py-3 border border-white/30 rounded-xs text-sm text-[#B1A490] hover:bg-white hover:text-[#122549] transition md:self-start md:mt-4">VIEW ALL PROJECTS</a>
           </div>
           <div className="mt-6 sm:mt-8 flex items-center gap-3">
             <button aria-label="Previous" onClick={() => scrollByCards(-1)} className="w-10 h-10 rounded-full grid place-items-center border border-white/30 hover:bg-white hover:text-[#122549] transition">←</button>

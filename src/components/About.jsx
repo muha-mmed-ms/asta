@@ -7,7 +7,7 @@ const About = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
   return (
-    <section id="who-we-are" ref={ref} className="py-20 md:py-32 relative overflow-x-hidden" style={{ backgroundColor: '#0F2847' }}>
+    <section id="who-we-are" ref={ref} className="py-20 md:py-32 relative overflow-x-hidden" style={{ backgroundColor: '#0f2447' }}>
       <div className="">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Side - Image with Golden Curve */}
@@ -49,7 +49,7 @@ const About = () => {
           >
             {/* Translucent droplet near eyebrow */}
             <div
-              className="absolute -top-4 -left-4 w-32 h-32 bg-accent-beige rounded-full opacity-20 blur-2xl z-0"
+              className="absolute -top-4 -left-4 w-32 h-32 bg-white rounded-full opacity-20 blur-2xl z-0"
             />
             <div className="relative z-10 pl-0 lg:pl-12 xl:pl-0">
               {/* Eyebrow */}
@@ -65,10 +65,10 @@ const About = () => {
                 <strong className="font-bold">Asta Properties</strong> is a Chennai-based real estate and hospitality company, founded by Vikram Agarwal, backed by over four decades of trust and nearly 30 years of experience in property development. We build structurally strong, functionally efficient residential, commercial, and hospitality projects that are consistently delivered on time. As pioneers of Chennai&apos;s real estate growth, our portfolio includes landmark residences, commercial spaces, and hospitality ventures such as Park Plaza and Radisson Blu in Egmore, developed and owned by the group under global hotel brands.
               </p>
               {/* CTA - Ghost button */}
-              <Link to="/about">
+              <Link to="#about">
                 <button
                   type="button"
-                  className="px-10 py-4 text-base font-normal uppercase tracking-wide transition-all duration-300 border border-white text-white hover:bg-white hover:text-primary-dark font-sans"
+                  className="px-10 py-4 text-base font-normal uppercase tracking-wide transition-all duration-300 border border-white text-white hover:bg-white hover:text-[#122549] transition font-sans"
                 >
                   more about us
                 </button>

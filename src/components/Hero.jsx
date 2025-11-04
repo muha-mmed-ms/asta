@@ -1,11 +1,15 @@
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
+import { useLocation } from 'react-router-dom';
 
 export default function Hero() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const {pathname} = useLocation();
+  console.log(pathname);
+  const imgSrc = pathname === '/' ? '/images/hero.jpg' : '/images/project-president.jpg';
   return (
     <section className="relative min-h-[90vh]">
-      <img src="/images/hero.jpg" alt="Hero" className="absolute inset-0 w-full h-full object-cover" />
+      <img src={imgSrc} alt="Hero" className="absolute inset-0 w-full h-full object-cover" />
 
       {/* <div className="absolute inset-x-0 top-0 z-10">
         <div className="mx-32 ml-40 px-2 py-3 flex items-center justify-between text-white">
